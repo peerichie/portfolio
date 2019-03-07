@@ -1,26 +1,27 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    position: absolute;
     width: 100%;
     height: auto;
     background-color: orange;
-    border: 0;
+  /*  border: 0;
     padding: 0;
-    margin: 0;
+    margin: 0; */
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 15px;
-    display: flex;
-    flex-direction: column;
+    background-size: cover;
 }
 header {
     width: 100%;
-    height: 50px;
+    height: auto;
     margin-top: 10px;
     background-color: rgb(255, 255, 255);
     color: #fff;
+    position: fixed;
 }
 /* Nav Styling starts */
 nav {
@@ -39,6 +40,7 @@ nav ul{
     width: 300px;
     padding: 20px;
     justify-content: space-between;
+    background: transparent;
 }
 nav ul a{
     text-decoration: none;
@@ -48,8 +50,39 @@ a:hover{
     color: blueviolet;
 }
 main {
-    background-color: blue;
+    /*background-color: blue;
     width: 100%;
-    height: 200px;
+    height: inherit;
+    color: #fff;*/
+}
+#welcome-section{
+    background: url("images/bg-2.jpg") no-repeat;
+    background: blueviolet;
     color: #fff;
+    top:50px;
+    width: inherit;
+    height: 450px;
+}
+h1{
+    font-size: 50px;
+    margin-top: 50px;
+    margin: 50px;
+    padding: 10px;
+}
+#welcome-section p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: silver;
+    margin:40px;
+}
+#about-me{
+    background: gray;
+    color: #fff;
+    width: inherit;
+    height: 300px;
+}
+#project{
+    background: lightgray;
+    width: inherit;
+    height: 300px;
 }
